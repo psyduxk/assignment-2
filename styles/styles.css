@@ -55,17 +55,61 @@
 
   /* banner styles */
 
+  .banner{
+    justify-content: space-between;
+   
+  }
   .banner-title{
     font-weight: 700;
     font-size: 3.25rem;
     line-height: 4.25rem;
-    margin-bottom: 3.25rem;
+    margin-bottom: 0.875rem;
   }
   .banner-desc{
     font-weight: 600;
     font-size: 1rem;
-    margin-bottom: 3.25rem;
+    margin-bottom: 0.875rem;
   }
 .banner-image{
     background-image: url(/images/Circle\ design.svg);
+    margin-bottom: 6.25rem;
 }
+
+
+/* websites styles */
+
+.websites{
+    display: flex;
+    gap: 3.8rem;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba(192, 204, 218, 0.1), rgba(192, 204, 218, 0.6), rgba(192, 204, 218, 0.1)) 1;
+    padding: 3.875rem 2.25rem;
+    opacity: 69%;
+    
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-title{
+        text-align: center;
+        font-size: 1.75rem;
+        line-height: normal;          
+    }
+    .banner-desc{
+        text-align: center;
+        font-size: 0.875rem;
+    }
+    .btn-primary{
+        margin: 0px auto;
+    }
+
+}
+
